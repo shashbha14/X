@@ -1,6 +1,12 @@
 # Project_X
  India AI CyberGuard Hackathon Code Submission
 
+# Team
+Shashwati : Btech ECE, Batch-26, IIIT NR (Team Head)
+Darshan Kochar: Btech CSE, Batch-27, IIIT NR
+Tejas Keshwani: Btech CSE, Batch-27, IIIT NR
+
+
 For categorization so far we have achieved f1_score of 0.84 with model best_model_category2.bin
 For ffc so far we have achieved f1_score of 0.77 with model best_model_ffc.bin
 For ffc so far we have achieved f1_score of 0.84 with model best_model_wc.bin

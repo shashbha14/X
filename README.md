@@ -102,15 +102,21 @@ This will output precision, recall, F1 scores, and other relevant metrics for ea
 
 This project includes techniques to handle data imbalance, particularly in the `sub_category` labels. We implement **upsampling** to create a balanced dataset, improving model performance on minority classes.
 
-## Results
+# Cybercrime Multi-Class Classification
 
-The model achieved significant performance improvements in F1 score across various categories, particularly excelling in commonly reported cybercrime types.
+## Model Performance
 
-| Metric      | Value  |
-|-------------|--------|
-| Precision   | 0.87   |
-| Recall      | 0.85   |
-| F1 Score    | 0.86   |
+The table below summarizes the performance of different models:
+
+| Model               | Precision | Recall  | F1 Score | Accuracy |
+|---------------------|-----------|---------|----------|----------|
+| **Best Model Category (`best_model_category2.bin`)** | 0.84      | 0.85    | 0.84     | 0.84     |
+| **Best Model FFC (`best_model_ffc.bin`)**         | 0.77      | 0.78    | 0.77     | 0.77     |
+| **Best Model OCC (`best_model_occ.bin`)**         | 0.84      | 0.83    | 0.84     | 0.84     |
+| **Best Model WC (`best_model_wc.bin`)**           | 0.82      | 0.83    | 0.82     | 0.82     |
+
+These models are evaluated based on their precision, recall, F1 score, and accuracy for the given task of classifying cybercrime descriptions into various categories.
+
 
 ## Contributing
 

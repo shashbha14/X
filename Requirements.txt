@@ -3,3 +3,4 @@ numpy==1.23.3
 torch==1.12.1
 scikit-learn==1.1.2
 nltk
+streamlit

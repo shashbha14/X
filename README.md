@@ -7,11 +7,6 @@
 - **Darshan Kochar**: B.Tech CSE, Batch-27, IIIT NR
 - **Tejas Keshwani**: B.Tech CSE, Batch-27, IIIT NR
 
-For categorization so far, we have achieved:
-- **F1 score of 0.84** with model `best_model_category2.bin`
-- **F1 score of 0.77** with model `best_model_ffc.bin`
-- **F1 score of 0.84** with model `best_model_wc.bin`
-
 ## Cybercrime Multi-Class Classification
 
 This project uses a BERT-based deep learning model to classify cybercrime descriptions into multiple categories and subcategories. It assists in analyzing and categorizing cybercrime reports effectively, providing a tool for law enforcement agencies, cybersecurity analysts, and researchers.

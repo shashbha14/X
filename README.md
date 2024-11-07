@@ -110,10 +110,10 @@ The table below summarizes the performance of different models:
 
 | Model               | Precision | Recall  | F1 Score | Accuracy |
 |---------------------|-----------|---------|----------|----------|
-| **Best Model Category (`best_model_category2.bin`)** | 0.84      | 0.85    | 0.84     | 0.84     |
+| **Best Model Category (`best_model_category2.bin`)** | 0.8386      | 0.8417    | 0.8389     | 0.8417     |
 | **Best Model FFC (`best_model_ffc.bin`)**         | 0.77      | 0.78    | 0.77     | 0.77     |
 | **Best Model OCC (`best_model_occ.bin`)**         | 0.84      | 0.83    | 0.84     | 0.84     |
-| **Best Model WC (`best_model_wc.bin`)**           | 0.82      | 0.83    | 0.82     | 0.82     |
+| **Best Model WC (`best_model_wc.bin`)**           | 0.7181      | 0.7292   | 0.7220     | 0.7292     |
 
 These models are evaluated based on their precision, recall, F1 score, and accuracy for the given task of classifying cybercrime descriptions into various categories.
 

@@ -1,6 +1,4 @@
-Here's the revised `README.md` file, incorporating the Hugging Face model hosting information and specific model details:
 
----
 
 # India AI CyberGuard Hackathon Code Submission
 
@@ -90,7 +88,13 @@ The dataset includes categories and subcategories of cybercrimes (e.g., **Phishi
 Run the following command to start model training:
 
 ```bash
-python main.py
+EDA.ipynb
+```
+```bash
+Copy.ipynb
+```
+```bash
+Mains.ipynb
 ```
 
 - **Arguments**:
@@ -103,16 +107,7 @@ Example:
 ```bash
 python main.py --epochs 3 --batch_size 16 --lr 2e-5
 ```
-
-#### To Evaluate the Model
-
-After training, evaluate the model on the test set:
-
-```bash
-python evaluate.py
-```
-
-This will output precision, recall, F1 scores, and other metrics for each class and overall performance.
+### For Evaluators
 
 #### Running the Streamlit Interface
 
@@ -158,6 +153,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 - [Hugging Face](https://huggingface.co/) for their open-source transformer models.
 - [PyTorch](https://pytorch.org/) for the deep learning framework.
 
----
-
-This updated `README.md` file now includes the Hugging Face link for accessing the hosted models, making it easier for users to understand and retrieve the models used in this project.

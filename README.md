@@ -129,15 +129,6 @@ The table below summarizes the performance of different models:
 
 These models are evaluated based on precision, recall, F1 score, and accuracy for the task of classifying cybercrime descriptions.
 
-## Contributing
-
-We welcome contributions to this project. To contribute:
-
-1. Fork this repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -m 'Add your feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a Pull Request.
 
 ## License
 

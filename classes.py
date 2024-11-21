@@ -18,6 +18,7 @@ class TextDataset(Dataset):
         self.labels = labels
         self.tokenizer = tokenizer
         self.max_len = max_len
+        self.indices = list(range(len(texts))) 
 
     def __len__(self):
         return len(self.texts)
@@ -25,6 +26,7 @@ class TextDataset(Dataset):
     def __getitem__(self, idx):
         text = self.texts[idx]
         label = self.labels[idx]
+        index = self.indices[idx]  
         encoding = self.tokenizer.encode_plus(
             text,
             add_special_tokens=True,
@@ -37,6 +39,6 @@ class TextDataset(Dataset):
         return {
             'input_ids': encoding['input_ids'].flatten(),
             'attention_mask': encoding['attention_mask'].flatten(),
-            'labels': torch.tensor(label, dtype=torch.long)
+            'labels': torch.tensor(label, dtype=torch.long),
+            'indices': torch.tensor(index, dtype=torch.long) 
         }
-

@@ -122,10 +122,10 @@ The table below summarizes the performance of different models:
 
 | Model                                  | Precision | Recall | F1 Score | Accuracy |
 |----------------------------------------|-----------|--------|----------|----------|
-| ** Category_Classifier ** | 0.9002    | 0.9014 | 0.9000   | 0.9017   |
-| ** Financial Fraud Classifier **           | 0.7772      | 0.7809   | 0.7781     | 0.7732     |
-| ** Other Cyber Crime Classifier **           | 0.6672      | 0.6889   | 0.6876    | 0.7264     |
-| ** Women/ Child Classifier **             | 0.9704    | 0.9806 | 0.9804   | 0.9892   |
+|  Category Classifier  | 0.9002    | 0.9014 | 0.9000   | 0.9017   |
+|  Financial Fraud Classifier          | 0.7772      | 0.7809   | 0.7781     | 0.7732     |
+|  Other Cyber Crime Classifier          | 0.6672      | 0.6889   | 0.6876    | 0.7264     |
+|  Women/ Child Classifier       | 0.9704    | 0.9806 | 0.9804   | 0.9892   |
 
 These models are evaluated based on precision, recall, F1 score, and accuracy for the task of classifying cybercrime descriptions.
 

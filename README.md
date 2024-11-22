@@ -45,13 +45,6 @@ The fine-tuned models are hosted on Hugging Face for public access:
 
 ---
 
-## Project Structure
-
-- **`main.py`**: Script for training and evaluating models.
-- **`data/`**: Contains `train.csv`, `val.csv`, and `test.csv`.
-- **`models/`**: Stores model checkpoints and weights.
-- **`notebooks/`**: For exploratory data analysis and experiments.
-- **`utils/`**: Contains utility functions for preprocessing and evaluation.
 
 ---
 
@@ -69,64 +62,6 @@ The fine-tuned models are hosted on Hugging Face for public access:
 conda create -n cyberguard python=3.8
 conda activate cyberguard
 
-
-# India AI CyberGuard Hackathon Code Submission
-
-## Team
-- **Shashwati**: B.Tech ECE, Batch-26, IIIT NR (Team Head)
-- **Darshan Kochar**: B.Tech CSE, Batch-27, IIIT NR
-- **Tejas Keshwani**: B.Tech CSE, Batch-27, IIIT NR
-
-## Cybercrime Multi-Class Classification
-
-This project uses a BERT-based deep learning model to classify cybercrime descriptions into multiple categories and subcategories. It assists in analyzing and categorizing cybercrime reports effectively, providing a tool for law enforcement agencies, cybersecurity analysts, and researchers.
-
-### Project Overview
-
-Cybercrime data classification poses unique challenges due to the variety of crime types, data imbalances, and nuanced language. This project uses **BERT (Bidirectional Encoder Representations from Transformers)** to enable high-accuracy, multi-class, and multi-label classification.
-
-### Key Features
-
-- **Multi-Class and Multi-Label Classification**: Classifies cybercrime descriptions across various categories and subcategories.
-- **BERT Fine-Tuning**: Fine-tunes BERT (`bert-base-uncased`) on cybercrime datasets.
-- **Data Augmentation**: Includes techniques for handling imbalanced classes, such as upsampling.
-
-## Hosted Models
-
-The models trained for this project are hosted on Hugging Face and can be accessed via the following link:
-
-[Darshan Kochar's Hugging Face Models](https://huggingface.co/Darshankochar022)
-
-### Available Models
-
-- **Category Prediction Model** (`best_model_category2.bin`): Predicts the primary category of cybercrime.
-- **Financial Fraud Crime Model** (`best_model_ffc.bin`): Focused on classifying financial fraud-related cybercrime.
-- **Women and Child Related Crime Model** (`best_model_wc.bin`): Specializes in categorizing cybercrime affecting women and children.
-- **Other Cyber Crime Model** (`best_model_occ.bin`): Covers additional cybercrime categories.
-
-## Project Structure
-
-- **`main.py`**: Main script for model training and evaluation.
-- **`data/`**: Folder containing training, validation, and test datasets.
-- **`models/`**: Stores model weights and checkpoints.
-- **`notebooks/`**: Jupyter notebooks for exploratory data analysis and model experimentation.
-- **`utils/`**: Utility functions for data processing, evaluation metrics, etc.
-
-## Getting Started
-
-### Prerequisites
-
-- **Python 3.8+** (Anaconda recommended)
-- `transformers` (Hugging Face Transformers library)
-- `torch` (PyTorch)
-- `pandas`, `scikit-learn`, `numpy`
-
-#### Step 1: Create a Virtual Environment
-It’s recommended to create a virtual environment to manage dependencies. To do this with Anaconda:
-
-```bash
-conda create -n cyberguard python=3.8
-conda activate cyberguard
 ```
 
 #### Step 2: Install Dependencies
@@ -138,10 +73,12 @@ pip install -r requirements.txt
 
 ### Dataset
 
-The dataset includes categories and subcategories of cybercrimes (e.g., **Phishing**, **Identity Theft**, **Malware Attack**). Place your dataset in the `data/` folder as:
+The dataset includes categories and subcategories of cybercrimes (e.g., **Phishing**, **Identity Theft**, **Malware Attack**). Place your dataset in the official website and those csvs made for trainig are made after preprocessing but due to larger size can't be uploaded:
 
 - `train.csv`: Training dataset
-- `val.csv`: Validation dataset
+- 'financial.csv' : subset of original
+- 'women_child.csv':subset of original
+- 'other.csv':subset of original 
 - `test.csv`: Testing dataset
 
 > **Note**: Due to confidentiality, the actual dataset is not provided here. Ensure your dataset follows the necessary format before training.
@@ -156,10 +93,13 @@ Run the following command to start model training:
 EDA.ipynb
 ```
 ```bash
-Copy.ipynb
+Category.ipynb
+ffc.ipynb
+wcc.ipynb
+occ.ipynb
 ```
 ```bash
-Mains.ipynb
+streamlit run App.py
 ```
 
 - **Arguments**:
@@ -167,18 +107,14 @@ Mains.ipynb
     - `--batch_size`: Batch size for training.
     - `--lr`: Learning rate.
 
-Example:
-
-```bash
-python main.py --epochs 3 --batch_size 16 --lr 2e-5
-```
 ### For Evaluators
 
 #### Running the Streamlit Interface
 
-To execute the code using a Streamlit interface, run:
+To execute the code using a Streamlit interface,clone the repo and  run:
 
 ```bash
+pip install-r requirements.txt
 streamlit run x.py
 ```
 
@@ -192,9 +128,9 @@ The table below summarizes the performance of different models:
 
 | Model                                  | Precision | Recall | F1 Score | Accuracy |
 |----------------------------------------|-----------|--------|----------|----------|
-|  Category Classifier  | 0.9002    | 0.9014 | 0.9000   | 0.9017   |
-|  Financial Fraud Classifier          | 0.7772      | 0.7809   | 0.7781     | 0.7732     |
-|  Other Cyber Crime Classifier          | 0.6672      | 0.6889   | 0.6876    | 0.7264     |
+|  Category Classifier  | 0.9342    | 0.9337 | 0.9342   | 0.9337   |
+|  Financial Fraud Classifier          | 0.9296     | 0.9283   | 0.9296     | 0.9280     |
+|  Other Cyber Crime Classifier          | 0.8880      | 0.8850   | 0.8880    | 0.8851     |
 |  Women/ Child Classifier       | 0.9704    | 0.9806 | 0.9804   | 0.9892   |
 
 These models are evaluated based on precision, recall, F1 score, and accuracy for the task of classifying cybercrime descriptions.

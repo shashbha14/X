@@ -38,10 +38,10 @@ The fine-tuned models are hosted on Hugging Face for public access:
 
 | Model Name                         | Task                                           | Hugging Face Link                                 |
 |------------------------------------|------------------------------------------------|--------------------------------------------------|
-| **Category Classifier**            | Predict primary cybercrime category           | [Category Classifier](https://huggingface.co/Category-Model) |
-| **Financial Fraud Classifier**     | Specialized in financial fraud classification | [Financial Fraud Classifier](https://huggingface.co/Financial-Model) |
-| **Women and Child Classifier**     | Crimes affecting women and children           | [Women and Child Classifier](https://huggingface.co/WC-Model) |
-| **Other Cyber Crimes Classifier**  | Handles all other crime categories            | [Other Cyber Crime Classifier](https://huggingface.co/OCC-Model) |
+| **Category Classifier**            | Predict primary cybercrime category           | [Category Classifier](https://huggingface.co/Darshankochar022)) |
+| **Financial Fraud Classifier**     | Specialized in financial fraud classification | [Financial Fraud Classifier](https://huggingface.co/Darshankochar022)) |
+| **Women and Child Classifier**     | Crimes affecting women and children           | [Women and Child Classifier](https://huggingface.co/Darshankochar022))  |
+| **Other Cyber Crimes Classifier**  | Handles all other crime categories            | [Other Cyber Crime Classifier](https://huggingface.co/Darshankochar022))  |
 
 ---
 
@@ -130,10 +130,10 @@ The table below summarizes the performance of different models:
 |----------------------------------------|-----------|--------|----------|----------|
 |  Category Classifier  | 0.9342    | 0.9337 | 0.9342   | 0.9337   |
 |  Financial Fraud Classifier          | 0.9296     | 0.9283   | 0.9296     | 0.9280     |
-|  Other Cyber Crime Classifier          | 0.8880      | 0.8850   | 0.8880    | 0.8851     |
+|  Other Cyber Crime Classifier  + ('all-mp-net' from sentence_transformers)       | 0.8880      | 0.8850   | 0.8880    | 0.8851     |
 |  Women/ Child Classifier       | 0.9704    | 0.9806 | 0.9804   | 0.9892   |
 
-These models are evaluated based on precision, recall, F1 score, and accuracy for the task of classifying cybercrime descriptions.
+Although the model other cyber crime is not so efficient bt its effficiency has increased simultaneously after trying to run it with similarity search using chroma_db, we highly encourage everyone to try the user interface and test us
 
 
 ## License

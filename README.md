@@ -1,3 +1,73 @@
+# India AI CyberGuard Hackathon Code Submission
+
+## Team Members
+
+| Name                | Program & Batch                  | Role                  | Contact                   |
+|---------------------|----------------------------------|-----------------------|---------------------------|
+| **Shashwati**       | B.Tech ECE, Batch-26, IIIT NR   | Team Head             | email@example.com         |
+| **Darshan Kochar**  | B.Tech CSE, Batch-27, IIIT NR   | Developer & Researcher| darshankochar022@gmail.com|
+| **Tejas Keshwani**  | B.Tech CSE, Batch-27, IIIT NR   | Developer & Analyst   | email@example.com         |
+
+---
+
+## Cybercrime Multi-Class Classification
+
+This project presents a deep learning-based approach to classify cybercrime descriptions into multiple categories and subcategories, providing an efficient tool for law enforcement and cybersecurity analysts.
+
+### **Highlights**
+- **Multi-Class Classification**: Efficient categorization of cybercrime reports into primary categories and subcategories.
+- **Streamlit App Integration**: A user-friendly interface for easy interaction and prediction.
+- **BERT-Based Fine-Tuning**: Employs `bert-base-uncased` for classification tasks.
+- **Addressing Imbalanced Data**: Implements upsampling to improve performance on minority classes.
+
+---
+
+## Project Overview
+
+Cybercrime datasets often exhibit class imbalances, challenging language use, and unique categorizations. This project leverages **BERT (Bidirectional Encoder Representations from Transformers)** to build robust models for multi-class and multi-label classification.
+
+---
+
+## Hosted Models
+
+The fine-tuned models are hosted on Hugging Face for public access:
+
+[Darshan Kochar's Hugging Face Models](https://huggingface.co/Darshankochar022)
+
+### **Model List**
+
+| Model Name                         | Task                                           | Hugging Face Link                                 |
+|------------------------------------|------------------------------------------------|--------------------------------------------------|
+| **Category Classifier**            | Predict primary cybercrime category           | [Category Classifier](https://huggingface.co/Category-Model) |
+| **Financial Fraud Classifier**     | Specialized in financial fraud classification | [Financial Fraud Classifier](https://huggingface.co/Financial-Model) |
+| **Women and Child Classifier**     | Crimes affecting women and children           | [Women and Child Classifier](https://huggingface.co/WC-Model) |
+| **Other Cyber Crimes Classifier**  | Handles all other crime categories            | [Other Cyber Crime Classifier](https://huggingface.co/OCC-Model) |
+
+---
+
+## Project Structure
+
+- **`main.py`**: Script for training and evaluating models.
+- **`data/`**: Contains `train.csv`, `val.csv`, and `test.csv`.
+- **`models/`**: Stores model checkpoints and weights.
+- **`notebooks/`**: For exploratory data analysis and experiments.
+- **`utils/`**: Contains utility functions for preprocessing and evaluation.
+
+---
+
+## Getting Started
+
+### **Prerequisites**
+
+- **Python 3.8+** (Anaconda recommended)
+- Libraries: `transformers`, `torch`, `pandas`, `scikit-learn`, `numpy`
+
+### **Setup Instructions**
+
+#### Step 1: Virtual Environment Setup
+```bash
+conda create -n cyberguard python=3.8
+conda activate cyberguard
 
 
 # India AI CyberGuard Hackathon Code Submission

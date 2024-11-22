@@ -2,11 +2,11 @@
 
 ## Team Members
 
-| Name                | Program & Batch                  | Role                  | Contact                   |
-|---------------------|----------------------------------|-----------------------|---------------------------|
-| **Shashwati**       | B.Tech ECE, Batch-26, IIIT NR   | Team Head             | email@example.com         |
-| **Darshan Kochar**  | B.Tech CSE, Batch-27, IIIT NR   | Developer & Researcher| darshankochar022@gmail.com|
-| **Tejas Keshwani**  | B.Tech CSE, Batch-27, IIIT NR   | Developer & Analyst   | email@example.com         |
+| Name                | Program & Batch                  | Role                  | 
+|---------------------|----------------------------------|-----------------------|
+| **Shashwati**       | B.Tech ECE, Batch-26, IIIT NR   | Team Head             | 
+| **Darshan Kochar**  | B.Tech CSE, Batch-27, IIIT NR   | Developer & Researcher| 
+| **Tejas Keshwani**  | B.Tech CSE, Batch-27, IIIT NR   | Developer & Analyst   | 
 
 ---
 
